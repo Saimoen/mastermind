@@ -93,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <body>
     <?php require_once 'includes/header.php' ?>
-    <div class="container my-5">
+    <div class="container my-5" style="height: 39vh">
         <h1> C'est à toi de jouer !</h1>
         <form action="/play-page.php" method="post">
             <div class="container">
@@ -154,7 +154,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
         </form>
     </div>
-    <div class="container">
+    <div class="container" style="height: 29vh">
         <div class="row">
             <div class="col-4">
                 <h3> <i class="fa-solid fa-dice-three mx-3"></i>Nombres d'essaies : <?= $essaies ?></h3>
@@ -185,8 +185,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     </div>
     </div>
-    <?php require_once 'includes/footer.php' ?>
-    </div>
+</div>
+<?php require_once 'includes/footer.php' ?>
 </body>
 
 </html>
